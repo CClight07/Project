@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet/css" >
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>My Project</title>
+  <script>
+    
+    function Dropover() {
+      document.getElementById("myDropover").classlist.toggle("show");
+
+      x.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropovers = document.getElementByClassName("dropover-content");
+          var i;
+          for(i = 0; i < dropovers.length; i++) {
+          var openDropover = dropovers[1];
+          if(openDropover.classlist.contains('show')) {
+            openDropdown.classlist.remove('show');
+          }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+<div class="content">
+  <div class="menu">
+      <div class="information">
+        <h1>Code Information</h1>
+      </div>
+
+      <div class="type">
+        <div class="header-dropover"><i onclick="Dropover()" class="code code" id='x'></i></div>
+          <a class="title-bar" href="#" ><h2>Html Code</h2></a><div class='bar' ></div>
+          <a class="title-bar" href="#" ><h2>Scss Code</h2></a><div class='bar' ></div>
+          <a class="title-bar" href="#" ><h2>Java Code</h2></a><div class='bar' ></div>
+        </div>
+  </div>
+
+      <div class="pagecontent" id="hidden">
+
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+      </div>
+      <div class="pagecontent" id="show ">
+
+          <p>" error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+  
+        </div>
+        
+    </div>
+ 
+</div>
+</body>
+
+</html>
